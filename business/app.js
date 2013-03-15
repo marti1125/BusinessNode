@@ -5,8 +5,10 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , user = require('./routes/user')
   , company = require('./routes/company')
+  , solutions = require('./routes/solutions')
+  , services = require('./routes/services')
+  , contacts = require('./routes/contacts')
   , http = require('http')
   , path = require('path');
 
@@ -47,8 +49,10 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
-app.get('/users', user.list);
 app.get('/company', company.company);
+app.get('/solutions', solutions.solutions);
+app.get('/services', services.services);
+app.get('/contacts', contacts.contacts);
 app.get('/404', function(req, res, next){
   next();
 });
