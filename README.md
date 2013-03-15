@@ -1,1 +1,3 @@
-Business Template using express
+##Business Template using Express
+
+	$ npm install
