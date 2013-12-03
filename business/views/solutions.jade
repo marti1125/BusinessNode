@@ -1,0 +1,110 @@
+extends layout
+
+block content
+  body#page3
+    .main
+      header
+        .wrapper
+          h1
+            a#logo(href='/') Superior.com
+          form#search(method='post')
+            fieldset
+              .bg
+                input.input(type='text', value='Search', onblur='if(this.value=="") this.value="Search"', onfocus='if(this.value =="Search" ) this.value=""')
+        nav
+          ul#menu
+            li
+              a(href='/')
+                span Homepage
+            li
+              a(href='/company')
+                span Company
+            li.active
+              a(href='/solutions')
+                span Solutions
+            li
+              a(href='/services')
+                span Services
+            li.last
+              a(href='/contacts')
+                span Contacts
+      article#content
+        .ic More Website Templates @ TemplateMonster.com - November 14, 2011!
+        .wrapper
+          .col1.marg_right1
+            h2 Membership
+            figure.pad_bot1
+              img(src='/img/page3_img1.jpg', alt='')
+            p
+              span.color2 Quos dolores et quas molestias excepturi sint occaecati cupiditate
+              br
+              | Non provident, similique sunt in culpa qui officia deserunt mollitia animi. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore cum.
+          .col2
+            h2 Why Choose Us
+            .wrapper
+              .col1.marg_right1
+                .wrapper
+                  span.dropcap_1 1
+                  p.color1.no_pad At vero eos et accusamus et iusto odio dignissimos ducimus
+                p.pad_bot1
+                  | Qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique.
+                .wrapper
+                  span.dropcap_1 2
+                  p.color1.no_pad Sunt in culpa qui officia deserunt mollitia animiid est
+                p.pad_bot1
+                  | Laborum et dolorum fuga harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo.
+              .col1
+                .wrapper
+                  span.dropcap_1 3
+                  p.color1.no_pad At vero eos et accusamus et iusto odio dignissimos ducimus
+                p.pad_bot1
+                  | Qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique.
+                .wrapper
+                  span.dropcap_1 4
+                  p.color1.no_pad Sunt in culpa qui officia deserunt mollitia animiid est
+                p.pad_bot1
+                  | Laborum et dolorum fuga harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo.
+    .bg1
+      .main
+        article#content2
+          .wrapper
+            h3 Successful Economic Solutions
+            .col3.marg_right1
+              figure.left.marg_right1
+                img(src='/img/page3_img2.jpg', alt='')
+              p
+                | “Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum.”
+                span.signature
+                  strong Michelle Green
+                  | General Director
+            .col3
+              figure.left.marg_right1
+                img(src='/img/page3_img3.jpg', alt='')
+              p
+                | “Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum.”
+                span.signature
+                  strong James Edison
+                  | Manager
+    .main
+      footer
+        ul#icons
+          li.first Follow Us:
+          li
+            a.normaltip(href='#', title='Facebook')
+              img(src='/img/icon1.jpg', alt='')
+          li
+            a.normaltip(href='#', title='Twitter')
+              img(src='/img/icon2.jpg', alt='')
+          li
+            a.normaltip(href='#', title='Picasa')
+              img(src='/img/icon3.jpg', alt='')
+          li
+            a.normaltip(href='#', title='YouTube')
+              img(src='/img/icon4.jpg', alt='')
+        | Superior.com © 2011
+        br
+        | Website Template by
+        a(href='http://www.templatemonster.com/', target='_blank') TemplateMonster.com
+        br
+    script(type='text/javascript')
+      Cufon.now();

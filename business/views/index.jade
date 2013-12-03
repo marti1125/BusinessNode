@@ -1,0 +1,188 @@
+extends layout
+
+block content
+  body#page1
+    .main
+        //
+          header 
+        header
+          .wrapper
+            h1
+              a#logo(href='/') Superior.com
+            form#search(method='post')
+              fieldset
+                .bg
+                  input.input(type='text', value='Search', onblur='if(this.value==\'\') this.value=\'Search\'', onfocus='if(this.value ==\'Search\' ) this.value=\'\'')
+          nav
+            ul#menu
+              li.active
+                a(href='/')
+                  span Homepage
+              li
+                a(href='/company')
+                  span Company
+              li
+                a(href='/solutions')
+                  span Solutions
+              li
+                a(href='/services')
+                  span Services
+              li.last
+                a(href='/contacts')
+                  span Contacts
+          #slider
+            ul.items
+              li
+                img(src='/img/img1.jpg', alt='')
+                .banner
+                  span.title
+                    span.color2 We Have
+                    span.color1 Propositions
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.
+                  a.button1(href='#') Read More
+              li
+                img(src='/img/img2.jpg', alt='')
+                .banner
+                  span.title
+                    span.color2 Fresh Ideas
+                    span.color1 For Growing
+                    span Your Business
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.
+                  a.button1(href='#') Read More
+              li
+                img(src='/img/img3.jpg', alt='')
+                .banner
+                  span.title
+                    span.color2 The Best
+                    span.color1 You Can Find
+                    span On The Web
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.
+                  a.button1(href='#') Read More
+        //
+          header end
+        //
+          content 
+        article#content
+          .ic More Website Templates @ TemplateMonster.com - November 14, 2011!
+          .wrapper
+            .col1.marg_right1
+              h2 Consulting
+              p
+                | Superior.com is one of
+                a(href='http://blog.templatemonster.com/free-website-templates/', target='_blank') free website templates
+                | created by TemplateMonster.com. It is also XHTML & CSS valid.
+            .col1.marg_right1
+              h2 Analysis
+              p
+                | This website template has sev- eral pages:
+                a(href='index.html') Home
+                | ,
+                a(href='Company.html') Company
+                | ,
+                a(href='Solutions.html') Solutions
+                | ,
+                a(href='Services.html') Services
+                | ,
+                a(href='Contacts.html') Contact Us
+                | (contact form – doesn’t work).
+            .col1.marg_right1
+              h2 Strategy
+              p
+                | This
+                a(href='http://blog.templatemonster.com/2011/11/14/free-website-template-jquery-slider-business-project/', target='_blank') Superior Template
+                | goes with two packages. PSD source files are available for the registered members.
+            .col1
+              h2 Services
+              ul.list1
+                li
+                  a(href='#') Sed ut perspiciatis unde 
+                li
+                  a(href='#') Omnis iste natus errorsitvo
+                li
+                  a(href='#') Uptatem acusantium domque 
+                li
+                  a(href='#') Laudantium totam rem
+      .bg1
+        .main
+          article#content2
+            .wrapper
+              .col2.marg_right1
+                h3 Welcome to Our Company!
+                .wrapper
+                  figure.left.marg_right1
+                    img(src='/img/page1_img1.jpg', alt='')
+                  p.color2.pad_bot1
+                    | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum accusamus
+                  p
+                    | Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum.
+                p
+                  | Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minusi quod maxime placeat facere possimus omnis voluptas assumenda est omnis dolor repellendus. Temporibus autem quibusdam aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae molestiae.
+                a.button1(href='#') Read More
+              .col1
+                h3 Publications
+                ul.list2
+                  li
+                    a(href='#') PR Management
+                    br
+                    | Dalesuad asorbi nunra vida- sea atcurs usecuctu.
+                  li
+                    a(href='#') Global solutions
+                    br
+                    | Naser maellus pore qus ese- dasese dusce.
+                  li
+                    a(href='#') Progressive Research
+                    br
+                    | Atcurs usuctu aecenas ttique  maellrase qus esedasese.
+                  li
+                    a(href='#') New Technologies
+                    br
+                    | Merts maellrase qus esedias dusceer lrurtasfeugiat.
+      .main
+        //
+          content end
+        //
+          footer 
+        footer
+          ul#icons
+            li.first Follow Us:
+            li
+              a.normaltip(href='#', title='Facebook')
+                img(src='/img/icon1.jpg', alt='')
+            li
+              a.normaltip(href='#', title='Twitter')
+                img(src='/img/icon2.jpg', alt='')
+            li
+              a.normaltip(href='#', title='Picasa')
+                img(src='/img/icon3.jpg', alt='')
+            li
+              a.normaltip(href='#', title='YouTube')
+                img(src='/img/icon4.jpg', alt='')
+          | Superior.com © 2011
+          br
+          | Website Template by
+          a(href='http://www.templatemonster.com/', target='_blank') TemplateMonster.com
+          br
+          //
+             {%FOOTER_LINK} 
+        //
+          footer end
+      script(type='text/javascript')
+        Cufon.now();
+      script
+        $(window).load(function(){
+        $('#slider')._TMS({
+        banners:true,
+        waitBannerAnimation:false,
+        preset:'diagonalFade',
+        easing:'easeOutQuad',
+        pagination:true,
+        duration:400,
+        slideshow:8000,
+        bannerShow:function(banner){
+        banner.css({marginRight:-500}).stop().animate({marginRight:0}, 600)
+        },
+        bannerHide:function(banner){
+        banner.stop().animate({marginRight:-500}, 600)
+        }
+        })
+        })

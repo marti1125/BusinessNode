@@ -1,0 +1,134 @@
+extends layout
+
+block content
+
+  body#page5
+    .main
+      header
+        .wrapper
+          h1
+            a#logo(href='index.html') Superior.com
+          form#search(method='post')
+            fieldset
+              .bg
+                input.input(type='text', value='Search', onblur='if(this.value=="") this.value="Search"', onfocus='if(this.value =="Search" ) this.value=""')
+        nav
+          ul#menu
+            li
+              a(href='/')
+                span Homepage
+            li
+              a(href='/company')
+                span Company
+            li
+              a(href='/solutions')
+                span Solutions
+            li
+              a(href='/services')
+                span Services
+            li.last.active
+              a(href='/contacts')
+                span Contacts
+      article#content
+        .ic More Website Templates @ TemplateMonster.com - November 14, 2011!
+        .wrapper
+          h2 Contact Form
+          form#ContactForm(method='post', action='/send')
+            div
+              .wrapper
+                span Name:
+                .bg
+                  input.input(type='text')
+              .wrapper
+                span Address:
+                .bg
+                  input.input(type='text')
+              .wrapper
+                span Email:
+                .bg
+                  input.input(type='text')
+              .textarea_box
+                span Comments:
+                .bg
+                  textarea(name='textarea', cols='1', rows='1')
+              a.button1(href='#', onclick='document.getElementById("ContactForm").submit()') Send
+              a.button1(href='#', onclick='document.getElementById("ContactForm").reset()') Clear
+    .bg1
+      .main
+        article#content2
+          .wrapper
+            h3 Our Contacts
+            .col1.marg_right1
+              p.address
+                span.color2 USA
+                br
+                | 8901 Marmora Road, Glasgow, D04
+                br
+                span Freephone:
+                | +1 800 559 6580
+                br
+                span Telephone:
+                | +1 800 603 6035
+                br
+                span Fax:
+                | +1 800 889 9898
+                br
+                span Email:
+                a(href='mailto:') mail@demolink.org
+            .col1.marg_right1
+              p.address
+                span.color2 Canada
+                br
+                | 8901 Marmora Road, Glasgow, D04
+                br
+                span Freephone:
+                | +1 800 559 6580
+                br
+                span Telephone:
+                | +1 800 603 6035
+                br
+                span Fax:
+                | +1 800 889 9898
+                br
+                span Email:
+                a(href='mailto:') mail@demolink.org
+            .col1
+              p.address
+                span.color2 Mexico
+                br
+                | 8901 Marmora Road, Glasgow, D04
+                br
+                span Freephone:
+                | +1 800 559 6580
+                br
+                span Telephone:
+                | +1 800 603 6035
+                br
+                span Fax:
+                | +1 800 889 9898
+                br
+                span Email:
+                a(href='mailto:') mail@demolink.org
+    .main
+      footer
+        ul#icons
+          li.first Follow Us:
+          li
+            a.normaltip(href='#', title='Facebook')
+              img(src='img/icon1.jpg', alt='')
+          li
+            a.normaltip(href='#', title='Twitter')
+              img(src='img/icon2.jpg', alt='')
+          li
+            a.normaltip(href='#', title='Picasa')
+              img(src='img/icon3.jpg', alt='')
+          li
+            a.normaltip(href='#', title='YouTube')
+              img(src='img/icon4.jpg', alt='')
+        | Superior.com © 2011
+        br
+        | Website Template by
+        a(href='http://www.templatemonster.com/', target='_blank') TemplateMonster.com
+        br
+    script(type='text/javascript')
+      Cufon.now();

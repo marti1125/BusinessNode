@@ -1,0 +1,133 @@
+extends layout
+
+block content
+  body#page2
+    .main
+          //
+            header 
+          header
+            .wrapper
+              h1
+                a#logo(href='/') Superior.com
+              form#search(method='post')
+                fieldset
+                  .bg
+                    input.input(type='text', value='Search', onblur='if(this.value==\'\') this.value=\'Search\'', onfocus='if(this.value ==\'Search\' ) this.value=\'\'')
+            nav
+              ul#menu
+                li
+                  a(href='/')
+                    span Homepage
+                li.active
+                  a(href='/company')
+                    span Company
+                li
+                  a(href='/solutions')
+                    span Solutions
+                li
+                  a(href='/services')
+                    span Services
+                li.last
+                  a(href='/contacts')
+                    span Contacts
+          //
+            header end
+          //
+            content 
+          article#content
+            .ic More Website Templates @ TemplateMonster.com - November 14, 2011!
+            .wrapper
+              .col2.marg_right1
+                h2 Who We Are
+                .wrapper
+                  figure.left.marg_right1
+                    img(src='/img/page2_img1.jpg', alt='')
+                  p.color2.pad_bot1
+                    | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                  p
+                    | Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.
+                p
+                  | Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minusi quod maxime placeat facere possimus omnis voluptas assumenda est omnis dolor repellendus. Temporibus autem quibusdam aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
+                a.button1(href='#') Read More
+              .col1
+                h2 Why Choose Us
+                .wrapper
+                  span.dropcap_1 1
+                  p.pad_bot1
+                    span.color1 Quis auteure reprehenderit
+                    br
+                    | Dalesuad asorbi nunra vidasea atcurs usecuctu.
+                .wrapper
+                  span.dropcap_1 2
+                  p.pad_bot1
+                    span.color1 Neque porro quisquam estorem
+                    br
+                    | Naser maellus pore qus esedase- se dusce.
+                .wrapper
+                  span.dropcap_1 3
+                  p.pad_bot1
+                    span.color1 Nemo enim voluptatem
+                    br
+                    | Atcurs usuctu aecenas ttique  maellrase qus esedasese.
+                .wrapper
+                  span.dropcap_1 4
+                  p.pad_bot1
+                    span.color1 Sed ut perspiciatis unde omnis
+                    br
+                    | Merts maellrase qus esedias dusceer lrurtasfeugiat.
+        .bg1
+          .main
+            article#content2
+              .wrapper
+                h3 Our History
+                .col1.marg_right1
+                  h3.color1 1999
+                  p
+                    | Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum.
+                  a.button1(href='#') Read More
+                .col1.marg_right1
+                  h3.color1 2004
+                  p
+                    | Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat mus.
+                  a.button1(href='#') Read More
+                .col1.marg_right1
+                  h3.color1 2007
+                  p
+                    | Maxime placeat facere possi- mus omnis voluptas assumen- da est omnis dolor repellendus. Temporibus autem quibusdam aut officiis debitis aut rerum necessitatibus saepe.
+                  a.button1(href='#') Read More
+                .col1
+                  h3.color1 2011
+                  p
+                    | Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minusi quod maxime placeat facere.
+                  a.button1(href='#') Read More
+        .main
+          //
+            content end
+          //
+            footer 
+          footer
+            ul#icons
+              li.first Follow Us:
+              li
+                a.normaltip(href='#', title='Facebook')
+                  img(src='/img/icon1.jpg', alt='')
+              li
+                a.normaltip(href='#', title='Twitter')
+                  img(src='/img/icon2.jpg', alt='')
+              li
+                a.normaltip(href='#', title='Picasa')
+                  img(src='/img/icon3.jpg', alt='')
+              li
+                a.normaltip(href='#', title='YouTube')
+                  img(src='/img/icon4.jpg', alt='')
+            | Superior.com © 2011
+            br
+            | Website Template by
+            a(href='http://www.templatemonster.com/', target='_blank') TemplateMonster.com
+            br
+            //
+               {%FOOTER_LINK} 
+          //
+            footer end
+        script(type='text/javascript')
+          Cufon.now();

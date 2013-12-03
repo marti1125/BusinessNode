@@ -1,0 +1,140 @@
+extends layout
+
+block content
+  body#page4
+    .main
+      header
+        .wrapper
+          h1
+            a#logo(href='index.html') Superior.com
+          form#search(method='post')
+            fieldset
+              .bg
+                input.input(type='text', value='Search', onblur='if(this.value=="") this.value="Search"', onfocus='if(this.value =="Search" ) this.value=""')
+        nav
+          ul#menu
+            li
+              a(href='/')
+                span Homepage
+            li
+              a(href='/company')
+                span Company
+            li
+              a(href='/solutions')
+                span Solutions
+            li.active
+              a(href='/services')
+                span Services
+            li.last
+              a(href='/contacts')
+                span Contacts
+      article#content
+        .ic More Website Templates @ TemplateMonster.com - November 14, 2011!
+        .wrapper
+          h2 Services Overview
+          .col1.marg_right1
+            .wrapper
+              figure.left.marg_right2
+                img(src='/img/page4_img1.jpg', alt='')
+              p
+                span.color1 Strategic Planning
+                br
+                | Non provident, similique sunt in culpa qui officia deserunt mollitia animi. Et harum quidem rerum facilis.
+            .wrapper
+              figure.left.marg_right2
+                img(src='/img/page4_img2.jpg', alt='')
+              p
+                span.color1 Risk Management
+                br
+                | Cam libero tempore cum soluta nobis est eligendi cumque nihil impedit quo minusi quod maxime placeat
+          .col1.marg_right1
+            .wrapper
+              figure.left.marg_right2
+                img(src='/img/page4_img3.jpg', alt='')
+              p
+                span.color1 Clients Relationship
+                br
+                | Non provident, similique sunt in culpa qui officia deserunt mollitia animi. Et harum quidem rerum facilis.
+            .wrapper
+              figure.left.marg_right2
+                img(src='/img/page4_img4.jpg', alt='')
+              p
+                span.color1 Investments
+                br
+                | Cam libero tempore cum soluta nobis est eligendi cumque nihil impedit quo minusi quod maxime placeat
+          .col1
+            .wrapper
+              figure.left.marg_right2
+                img(src='/img/page4_img5.jpg', alt='')
+              p
+                span.color1 Insurance Services
+                br
+                | Non provident, similique sunt in culpa qui officia deserunt mollitia animi. Et harum quidem rerum facilis.
+            .wrapper
+              figure.left.marg_right2
+                img(src='/img/page4_img6.jpg', alt='')
+              p
+                span.color1 Sales Lead Generation
+                br
+                | Cam libero tempore cum soluta nobis est eligendi cumque nihil impedit quo minusi quod maxime placeat
+    .bg1
+      .main
+        article#content2
+          .wrapper
+            h3 Main Services
+            .col1.marg_right1
+              .wrapper
+                span.dropcap_1 A
+                p.color2.pad_bot1 Franchise Assessment
+              p
+                | Corrupti quos dolores et quas molestias excepturi sint occae- cati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum.
+            .col1.marg_right1
+              .wrapper
+                span.dropcap_1 B
+                p.color2.pad_bot1
+                  | Expert Business
+                  br
+                  | Plan
+              p
+                | Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minusi quod maxime placeat facere.
+            .col1.marg_right1
+              .wrapper
+                span.dropcap_1 C
+                p.color2.pad_bot1
+                  | International
+                  br
+                  | Expansion Advice
+              p
+                | Corrupti quos dolores et quas molestias excepturi sint occae- cati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum.
+            .col1
+              .wrapper
+                span.dropcap_1 D
+                p.color2.pad_bot1
+                  | Market
+                  br
+                  | Research
+              p
+                | Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minusi quod maxime placeat facere.
+    .main
+      footer
+        ul#icons
+          li.first Follow Us:
+          li
+            a.normaltip(href='#', title='Facebook')
+              img(src='/img/icon1.jpg', alt='')
+          li
+            a.normaltip(href='#', title='Twitter')
+              img(src='/img/icon2.jpg', alt='')
+          li
+            a.normaltip(href='#', title='Picasa')
+              img(src='/img/icon3.jpg', alt='')
+          li
+            a.normaltip(href='#', title='YouTube')
+              img(src='/img/icon4.jpg', alt='')
+        | Superior.com © 2011
+        br
+        | Website Template by
+        a(href='http://www.templatemonster.com/', target='_blank') TemplateMonster.com
+        br
+    script(type='text/javascript')
+      Cufon.now();
