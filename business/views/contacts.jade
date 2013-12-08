@@ -38,17 +38,18 @@ block content
               .wrapper
                 span Name:
                 .bg
-                  input.input(type='text', id='name', name='name')              
+                  input.inputText(type='text', id='name', name='name')              
               .wrapper
                 span Email:
                 .bg
-                  input.input(type='text', id='email', name='email')
+                  input.inputText(type='text', id='email', name='email')
               .textarea_box
                 span Comments:
                 .bg
-                  textarea(name='message', cols='40', rows='10',id='message')
+                  textarea.inputTextArea(name='message',id='message')
                 br
               input#submit.button1(name='submit', type='submit', value='Send')
+              &nbsp&nbsp
               input#submit.button1(name='submit', type='reset', value='Clear')
     .bg1
       .main
