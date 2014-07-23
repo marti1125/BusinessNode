@@ -163,26 +163,25 @@ block content
           a(href='http://www.templatemonster.com/', target='_blank') TemplateMonster.com
           br
           //
-             {%FOOTER_LINK} 
-        //
-          footer end
-      script(type='text/javascript')
-        Cufon.now();
-      script
-        $(window).load(function(){
-        $('#slider')._TMS({
-        banners:true,
-        waitBannerAnimation:false,
-        preset:'diagonalFade',
-        easing:'easeOutQuad',
-        pagination:true,
-        duration:400,
-        slideshow:8000,
-        bannerShow:function(banner){
-        banner.css({marginRight:-500}).stop().animate({marginRight:0}, 600)
-        },
-        bannerHide:function(banner){
-        banner.stop().animate({marginRight:-500}, 600)
-        }
-        })
-        })
+            {%FOOTER_LINK} 
+          //
+script(type='text/javascript').
+  Cufon.now();
+script(type='text/javascript').
+  $(window).load(function(){
+  $('#slider')._TMS({
+  banners:true,
+  waitBannerAnimation:false,
+  preset:'diagonalFade',
+  easing:'easeOutQuad',
+  pagination:true,
+  duration:400,
+  slideshow:8000,
+  bannerShow:function(banner){
+  banner.css({marginRight:-500}).stop().animate({marginRight:0}, 600)
+  },
+  bannerHide:function(banner){
+  banner.stop().animate({marginRight:-500}, 600)
+  }
+  })
+  })

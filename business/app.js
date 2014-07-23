@@ -4,7 +4,6 @@
  */
 
 var express = require('express');
-var nodemailer = require('nodemailer');
 var routes = require('./routes');
 var http = require('http');
 var path = require('path');
@@ -41,36 +40,6 @@ app.get('/services', services.services);
 app.get('/contacts', contacts.contacts);
 app.use(function(req,res){
     res.render('404');
-});
-
-app.post('/send', function (req, res) {
-	var mailOpts, smtpConfig;
-	smtpConfig = nodemailer.createTransport('SMTP', {
-		service: 'Gmail',
-		auth: {
-			user: "yourGmailidGoesHere @gmail.com",
-			pass: "yourpasswordgoeshere"
-		}
-	});
-	//construct the email sending module
-	mailOpts = {
-		from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-		to: 'urgmailid@gmail.com',
-		//replace it with id you want to send multiple must be separated by , (Comma)
-		subject: 'contact form',
-		text: req.body.message
-	};
-	//send Email
-	smtpConfig.sendMail(mailOpts, function (error, response) {
-		//Email not sent
-		if (error) {
-			res.end("Email send Falied");
-		}
-		//email send sucessfully
-		else {
-		res.end("Email send sucessfully");
-		}
-	});
 });
 
 http.createServer(app).listen(app.get('port'), function(){
